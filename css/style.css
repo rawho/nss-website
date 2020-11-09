@@ -1,0 +1,169 @@
+*, body{
+    padding: 0;
+    margin: 0;
+}
+
+
+.wrap{
+    background-color: rgba(0,0,0,0.6);
+    color: #ffffff;
+    display: block;
+    width: fit-content;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: rgba(0,0,0,0.6);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+
+
+.homepage{
+    display: grid;
+    grid-template-columns: 5vw 90vw 5vw;
+}
+
+/*_________________________
+                           
+        Time Line  
+ __________________________*/
+
+
+
+.homepage .timeline{
+    height: 80%;
+    align-self: center;
+    border-right: 2px solid black;    
+}
+.homepage .timeline .circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 90px;
+    margin-left: 4.2vw;
+    cursor: pointer;
+}
+
+.homepage .timeline .circle.active{
+    background-color: #ffc107;
+}
+
+
+
+/*_____________________
+                           
+        Nav Bar  
+ ______________________*/
+
+.homepage .navbar{
+    max-height: 100vh;
+    background-color: #222222;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.homepage .navbar .hamburger{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 30px;
+}
+
+.homepage .navbar .hamburger i{
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.homepage .navbar .menus{
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.homepage .navbar .menus i{
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+
+
+/*_________________________
+                           
+        MAIN CONTENT 
+__________________________*/
+
+
+
+.homepage .main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+}
+.homepage .main .logo{
+    position: absolute;
+    right: 7vw;
+    top: 4vh;
+}
+
+.homepage .main .logo img{
+    width: 60px;
+}
+
+.homepage .main .nss-text-box{
+    width: 60%;
+    margin: auto;
+    height: 20vw;
+    border: 50px solid rgb(60, 60, 102);
+}
+.homepage .main .nss-text-box h1{
+    font-size: 7em;
+    text-align: center;
+    color: rgb(60, 60, 102);
+    font-family: sans-serif;
+}
+
+
+
+.main .nss-details{
+    padding: 100px;
+}
+
+.main .nss-details .heading{
+    margin-bottom: 100px;
+    position: relative;
+}
+
+#be-a-volunteer{
+    position: absolute;
+    right: 20%;
+    margin-top: 20px;
+}
+
+.main .nss-details .heading h2{
+    color: rgb(60, 60, 102);
+    font-family: sans-serif;
+}
+
+.main .nss-details .need-help{
+    padding: 30px;
+    position: relative;
+}
+
+.main .nss-details .need-help p{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.main .nss-details .need-help .btn{
+    margin-top: 20px;
+}

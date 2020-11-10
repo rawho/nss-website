@@ -11,3 +11,4 @@ hamburgerClose.addEventListener('click', () => {
     document.querySelector(".navbar").classList.remove('hidden')
     document.querySelector(".navbar-toggle").classList.add("hidden")
 })
+

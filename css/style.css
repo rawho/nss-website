@@ -151,6 +151,9 @@
         MAIN CONTENT 
 __________________________*/
 
+.mobile-nav{
+    display: none;
+}
 
 
 .homepage .main{
@@ -216,4 +219,243 @@ __________________________*/
 
 .main .nss-details .need-help .btn{
     margin-top: 20px;
+}
+
+
+
+/*_________________________
+                           
+        Resposnsive 
+__________________________*/
+
+
+@media(max-width: 1205px) {
+    .homepage .timeline .circle {
+        margin-left: 4vw;
+    }
+    .homepage .main .nss-text-box h1 {
+        font-size: 5rem;
+    }
+
+    .main .nss-details {
+        padding: 15px;
+    }
+}
+
+
+@media(max-width: 676px) {
+
+    .homepage{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .homepage .timeline{
+        display: none!important;
+    }
+    .homepage .navbar{
+        display: none;
+    }
+
+    .homepage .main{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .homepage .main .logo{
+        display: none;
+    }
+
+    .homepage .main .nss-text-box{
+        width: 60%;
+        margin: auto;
+        margin-top: 100px;
+        height: 50vw;
+        border: 10px solid rgb(60, 60, 102);
+    }
+    .homepage .main .nss-text-box h1{
+        font-size: 5em;
+        text-align: center;
+        color: rgb(60, 60, 102);
+        font-family: sans-serif;
+    }
+
+
+
+    /* Mobile nav bar  */
+
+    .mobile-nav{
+        display: block;
+    }
+    .container{
+        max-width: 1170px;
+        margin: auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .align-items-center{
+        align-items: center;
+    }
+    .justify-content-between{
+        justify-content: space-between;
+    }
+    .header{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+        transition: all 0.5s ease;
+    }
+    .header.fixed{
+        background-color: #ffffff;
+        position: fixed;
+        border-bottom: 1px solid rgba(0,0,0,0.6);
+        -webkit-box-shadow: 0px 20px 19px 0px rgba(50, 50, 50, 0.47);
+    -moz-box-shadow:    0px 20px 19px 0px rgba(50, 50, 50, 0.47);
+    box-shadow:         0px 20px 19px 0px rgba(50, 50, 50, 0.47);
+    }
+    
+    .header .brand-name{
+        padding: 15px 0;
+    }
+    .header .brand-name img{
+        width: 50px;
+    }
+    .header .brand-name a{
+        text-decoration: none;
+        font-size: 30px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 2px;
+        transition: all 0.5s ease;
+    }
+    .header.fixed .brand-name a{
+        color: #000000;
+    }
+    .header .nav-toggle{
+        height: 34px;
+        width: 40px;
+        border: 1px solid #222222;
+        border-radius: 3px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        display: none;
+    }
+    
+    .header.fixed .nav-toggle{
+        border-color: #222222;
+    }
+    .header .nav-toggle span{
+        height: 1px;
+        display: block;
+        width: 16px;
+        background-color: #222222;
+        position: relative;
+        transition: all 0.5s ease;
+    }
+    
+    .header .nav-toggle span::before,
+    .header .nav-toggle span::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 1px;
+        width: 100%;
+        background-color: #222222;
+        transition: all 0.5s ease;
+    }
+    .header.fixed .nav-toggle span,
+    .header.fixed .nav-toggle span::before,
+    .header.fixed .nav-toggle span::after{
+        background-color: #222222;
+    }
+    .header .nav-toggle span::before{
+        transform: translateY(-6px);
+    }
+    .header .nav-toggle span::after{
+        transform: translateY(6px);
+    }
+    
+    .header .nav{
+        padding: 0 15px;
+    }
+    
+    .header .nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header .nav ul li{
+        display: inline-block;
+        margin-left: 30px;
+    }
+    .header .nav ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffffff;
+        padding: 25px 0;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .header.fixed .nav ul li a{
+        color: #000000;
+    }
+    
+    .header.fixed .nav ul li a:hover,
+    .header .nav ul li a:hover{
+        color: #ff8900;
+    }
+    .header{
+        padding: 7px 0;
+    }
+    .header .brand-name{
+        padding: 15px 10px;
+    }
+    .header .brand-name a{
+        letter-spacing: 0;
+    }
+    .header .nav-toggle{
+        display: flex;
+        margin-right: 15px;
+    }
+    .header .nav{
+        flex: 0 0 100%;
+        max-width: 100%;
+        background-color: #ffffff;
+        padding: 0;
+        display: none;
+    }
+    .header.fixed .nav{
+        border-top: 1px solid #cccccc;
+    }
+    .header .nav ul li{
+        display: block;
+        margin-right: 25px;
+    }
+    .header.fixed .nav ul li a,
+    .header .nav ul li a{
+        color: #000000;
+        padding: 15px 0;
+    }
+    .home-section .home-content h1{
+        font-size: 40px;
+    }
+    .about-section .about-img{
+        display: none;
+    }
+    .about-section .about-content{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }

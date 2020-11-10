@@ -47,21 +47,22 @@ body{
 .homepage .timeline{
     height: 80%;
     align-self: center;
-    border-right: 2px solid black;    
+    border-right: 3px solid rgb(255, 255, 255);    
 }
 .homepage .timeline .circle{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    border: 0.1px solid rgba(0, 0, 0, 0.186);
     margin-top: 90px;
-    margin-left: 4.2vw;
+    margin-left: 4.4vw;
     cursor: pointer;
 }
 
 .active{
-    -webkit-box-shadow: 0px 1px 0px 13px rgba(0,0,0,0.58); 
-    box-shadow: 0px 1px 0px 13px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 0px 1px 0px 13px rgba(0,0,0,0.3); 
+    box-shadow: 0px 0.3px 0px 10px rgba(0,0,0,0.3);
 }
 
 

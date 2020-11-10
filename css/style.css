@@ -20,8 +20,12 @@
     outline: none;
     padding: 10px 25px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
+.hidden{
+    display: none!important;
+}
 
 
 .homepage{
@@ -68,6 +72,7 @@
     padding: 10%;
     display: flex;
     justify-content: center;
+    
 }
 
 .homepage .navbar .hamburger{
@@ -75,6 +80,9 @@
     width: 20px;
     position: absolute;
     top: 30px;
+    cursor: pointer;
+    
+    
 }
 
 .homepage .navbar .hamburger i{
@@ -87,6 +95,7 @@
     bottom: 100px;
     display: flex;
     flex-direction: column;
+    
 }
 .homepage .navbar .menus i{
     color: #ffffff;
@@ -94,7 +103,48 @@
     margin-top: 25px;
 }
 
+.homepage .navbar-toggle{
+    max-height: 100vh;
+    min-width: 14vw;
+    transform: translateX(-10vw);
+    background-color: #222222;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+}
 
+.homepage .navbar-toggle .logo{
+    position: absolute;
+    right: 5vw;
+    top: 4vh;
+}
+
+.homepage .navbar-toggle .logo img{
+    width: 60px;
+}
+
+
+.homepage .navbar-toggle .hamburger-close{
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+}
+
+.homepage .navbar-toggle .hamburger-close i{
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.homepage .navbar-toggle .menus{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 100px;
+}
+
+.homepage .navbar-toggle .menus button{
+    margin-top: 30px;
+}
 
 /*_________________________
                            
@@ -135,7 +185,7 @@ __________________________*/
 
 
 .main .nss-details{
-    padding: 100px;
+    padding: 50px;
 }
 
 .main .nss-details .heading{
@@ -145,7 +195,7 @@ __________________________*/
 
 #be-a-volunteer{
     position: absolute;
-    right: 20%;
+    right: 35%;
     margin-top: 20px;
 }
 

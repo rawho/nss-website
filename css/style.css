@@ -9,7 +9,7 @@ body{
 }
 
 .wrap{
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(48, 48, 48, 0.6);
     color: #ffffff;
     display: block;
     width: fit-content;
@@ -227,6 +227,7 @@ __________________________*/
 .main .nss-details .need-help{
     padding: 30px;
     position: relative;
+    overflow: auto;
 }
 
 .main .nss-details .need-help p{
@@ -236,6 +237,7 @@ __________________________*/
 
 .main .nss-details .need-help .btn{
     margin-top: 20px;
+    float: right;
 }
 
 

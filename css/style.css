@@ -18,7 +18,7 @@ body{
 }
 
 .btn {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(50, 48, 48, 0.6);
     color: #ffffff;
     border: none;
     outline: none;
@@ -73,7 +73,7 @@ body{
 
 .homepage .navbar{
     max-height: 100vh;
-    background-color: #222222;
+    background-color: #676158;
     padding: 10%;
     display: flex;
     justify-content: center;
@@ -112,7 +112,7 @@ body{
     max-height: 100vh;
     min-width: 14vw;
     transform: translateX(-10vw);
-    background-color: #222222;
+    background-color: #676158;
     padding: 10%;
     display: flex;
     justify-content: center;
@@ -181,12 +181,23 @@ __________________________*/
     width: 60%;
     margin: auto;
     height: 20vw;
-    border: 50px solid rgb(60, 60, 102);
+    border: 50px solid #14054B;
+    position: relative;
 }
 .homepage .main .nss-text-box h1{
     font-size: 7em;
     text-align: center;
-    color: rgb(60, 60, 102);
+    letter-spacing: 4px;
+    font-weight: 800;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    line-height: 1em;
+    text-align: center;
+    color: #14054B;
     font-family: sans-serif;
 }
 
